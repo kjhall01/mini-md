@@ -6,12 +6,9 @@ build-backend = "setuptools.build_meta"
 name = "mini-md"
 version = "0.0.1"
 description = "Mini Lorenz-84 monthly diffusion project"
-requires-python = ">=3.10"
-dependencies = [
-  "numpy",
-  "scipy",
-  "xarray",
-]
+requires-python = ">=3.12"
+# Runtime dependencies are managed by Conda in environment.yml.
+dependencies = []
 
-[tool.setuptools]
-py-modules = ["minimd"]
+[tool.setuptools.packages.find]
+include = ["minimd*"]

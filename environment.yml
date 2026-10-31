@@ -1,8 +1,20 @@
 name: mini-md
+# From the project root:
+#   conda env create -f environment.yml
+#   conda activate mini-md
+#   python -m pip install --no-deps --no-build-isolation -e .
+# After changing dependencies:
+#   conda env update -n mini-md -f environment.yml
 channels:
   - conda-forge
+  - nodefaults
 dependencies:
   - python=3.12
+  - numpy
+  - scipy
+  - xarray
+  - matplotlib
+  - pytorch
+  - setuptools>=68
+  - wheel
   - pip
-  - pip:
-      - -e .

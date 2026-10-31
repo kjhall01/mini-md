@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: mini-md
+Version: 0.0.1
+Summary: Mini Lorenz-84 monthly diffusion project
+Requires-Python: >=3.12
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: xarray
+Requires-Dist: matplotlib
+Requires-Dist: pytorch
