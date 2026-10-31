@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-md"
+version = "0.0.1"
+description = "Mini Lorenz-84 monthly diffusion project"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "scipy",
+  "xarray",
+]
+
+[tool.setuptools]
+py-modules = ["minimd"]
